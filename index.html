@@ -4,12 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="Countries" content="Counties in the world">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="Styles/variables.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <title>Countries</title>
 </head>
 
 <body>
+    <header class="primary-header">
+        <nav class="primary-navigation">
+            <h1 class="title">Where in the World?</h1>
+            <button type="button" class="mode-toggle-button">
+                <i class="fa-solid fa-moon"></i>
+                <p>Dark Mode</p>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="search">
+            <form>
+                <div class="searchbar-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="search-bar" placeholder="Search for a country">
+                </div>
+                <select id="filter">
+                    <option value="" selected disabled>Filter By Region</option>
+                    <option value="Africa">Africa</option>
+                    <option value="America">America</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                    <option value="All">All</option>
+                </select>
+            </form>
+        </section>
+        <section class="container">
 
+            <!-- single item -->
+            <a href="single.html" class="link">
+                <article class="country" data-id="NEP">
+                    <img src="https://flagcdn.com/ax.svg" alt="nepal-flag">
+                    <div class="details">
+                        <h2 class="name">United States Of America</h2>
+                        <p class="population"><span class="desc">population:</span> 81,770,900</p>
+                        <p class="region"><span class="desc">region:</span> Asia</p>
+                        <p class="capital"><span class="desc">capital:</span> Kathmandu</p>
+                    </div>
+                </article>
+            </a>
+            <!-- end of single item -->
+
+            <!-- single item -->
+            <a href="" class="link">
+                <article class="country" data-id="NEP">
+                    <img src="https://flagcdn.com/ax.svg" alt="nepal-flag">
+                    <div class="details">
+                        <h2 class="name">United States Of America</h2>
+                        <p class="population"><span class="desc">population:</span> 81,770,900</p>
+                        <p class="region"><span class="desc">region:</span> Asia</p>
+                        <p class="capital"><span class="desc">capital:</span> Kathmandu</p>
+                    </div>
+                </article>
+            </a>
+            <!-- end of single item -->
+
+            <!-- single item -->
+            <a href="" class="link">
+                <article class="country" data-id="NEP">
+                    <img src="https://flagcdn.com/ax.svg" alt="nepal-flag">
+                    <div class="details">
+                        <h2 class="name">United States Of America</h2>
+                        <p class="population"><span class="desc">population:</span> 81,770,900</p>
+                        <p class="region"><span class="desc">region:</span> Asia</p>
+                        <p class="capital"><span class="desc">capital:</span> Kathmandu</p>
+                    </div>
+                </article>
+            </a>
+            <!-- end of single item -->
+
+            <!-- single item -->
+            <a href="" class="link">
+                <article class="country" data-id="NEP">
+                    <img src="https://flagcdn.com/ax.svg" alt="nepal-flag">
+                    <div class="details">
+                        <h2 class="name">United States Of America</h2>
+                        <p class="population"><span class="desc">population:</span> 81,770,900</p>
+                        <p class="region"><span class="desc">region:</span> Asia</p>
+                        <p class="capital"><span class="desc">capital:</span> Kathmandu</p>
+                    </div>
+                </article>
+            </a>
+            <!-- end of single item -->
+
+            <!-- single item -->
+            <a href="" class="link">
+                <article class="country" data-id="NEP">
+                    <img src="https://flagcdn.com/ax.svg" alt="nepal-flag">
+                    <div class="details">
+                        <h2 class="name">United States Of America</h2>
+                        <p class="population"><span class="desc">population:</span> 81,770,900</p>
+                        <p class="region"><span class="desc">region:</span> Asia</p>
+                        <p class="capital"><span class="desc">capital:</span> Kathmandu</p>
+                    </div>
+                </article>
+            </a>
+            <!-- end of single item -->
+
+            <!-- single item -->
+            <a href="" class="link">
+                <article class="country" data-id="NEP">
+                    <img src="https://flagcdn.com/ax.svg" alt="nepal-flag">
+                    <div class="details">
+                        <h2 class="name">United States Of America</h2>
+                        <p class="population"><span class="desc">population:</span> 81,770,900</p>
+                        <p class="region"><span class="desc">region:</span> Asia</p>
+                        <p class="capital"><span class="desc">capital:</span> Kathmandu</p>
+                    </div>
+                </article>
+            </a>
+            <!-- end of single item -->
+
+        </section>
+    </main>
 </body>
-<script src="app.js"></script>
+<script type="module" src="app.js"></script>
 
 </html>

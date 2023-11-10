@@ -4,11 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="Countries" content="Counties in the world">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="Styles/variables.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <title>Countries</title>
 </head>
 
 <body>
+    <header class="primary-header">
+        <nav class="primary-navigation">
+            <h1 class="title">Where in the World?</h1>
+            <button type="button" class="mode-toggle-button">
+                <i class="fa-solid fa-moon"></i>
+                <p>Dark Mode</p>
+            </button>
+        </nav>
+    </header>
+    <main class="main">
+        <button type="button" class="back">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back
+        </button>
+        <article class="singleItem">
+            <img src="https://flagcdn.com/ax.svg" alt="nepal-flag">
+            <div class="detail">
+                <h2 class="country-name">United States Of America</h2>
+                <div class="single-detail">
+                    <div class="first-detail">
+                        <p class="native"> <span class="desc">Native Name:</span> Belgium</p>
+                        <p class="population"> <span class="desc">Population:</span> 11,319,511</p>
+                        <p class="region"> <span class="desc">region:</span> Europe</p>
+                        <p class="sub-region"> <span class="desc">sub-region:</span> Western Europe</p>
+                        <p class="capital"> <span class="desc">capital:</span> Brussels</p>
+                    </div>
+                    <div class="second-detail">
+                        <p class="domain"> <span class="desc">Top Level Domain:</span> Be</p>
+                        <p class="currency"> <span class="desc">currency:</span> Euro</p>
+                        <p class="language"> <span class="desc">language:</span> Euro</p>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <h3 class="desc">Border Countries:</h3>
+                    <div class="btn">
+                        <a href="#" class="border">Germany</a>
+                        <a href="#" class="border">France</a>
+                        <a href="#" class="border">Netherlands</a>
+                    </div>
 
+                </div>
+            </div>
+        </article>
+    </main>
 </body>
+<script type="module" src="single.js"></script>
 
 </html>
