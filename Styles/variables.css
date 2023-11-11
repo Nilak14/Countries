@@ -1,7 +1,7 @@
 :root {
   /*?  Colors */
   --Dark-Blue: hsl(209, 23%, 22%); /* ! Dark Mode Elements */
-  --Very-Dark-Blue: hsl(207, 26%, 17%); /* ! Dark Mode BackGround */
+  --Very-Very-Dark-Blue: hsl(207, 26%, 17%); /* ! Dark Mode BackGround */
   --Very-Dark-Blue: hsl(200, 15%, 8%); /* ! Light Mode Text */
   --Dark-Gray: hsl(0, 0%, 52%); /* ! Light Mode Input */
   --Very-Light-Gray: hsl(0, 0%, 98%); /* ! Light Mode Background */
@@ -17,6 +17,16 @@
   /* ! Font-size*/
   --FS-100: 0.875rem;
   --FS-200: 1.1rem;
+
+  /* ? Box shadow */
+  --BOX-SHADOW: 0px 0px 8px 0px var(--Dark-Gray);
+}
+
+.darkMode {
+  --Very-Dark-Blue: hsl(0, 0%, 100%);
+  --Very-Light-Gray: var(--Very-Very-Dark-Blue);
+  --White: var(--Dark-Blue);
+  --BOX-SHADOW: 0px 0px 8px 0px hsl(207, 26%, 17%);
 }
 
 /* Mobile: 375px */
