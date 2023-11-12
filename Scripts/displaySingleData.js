@@ -24,7 +24,7 @@ export async function displaySingle(countryName) {
         <h2 class="country-name">${country.name}</h2>
         <div class="single-detail">
             <div class="first-detail">
-                <p class="native"> <span class="desc">Native Name :</span> ${native}</p>
+                <p class="native"> <span class="desc">Native Name :</span> ${native.join(`${'&nbsp;'},${'&nbsp;'}`)}</p>
                 <p class="population"> <span class="desc">Population :</span> ${population ? population : 'Not defined till Now'}</p>
                 <p class="region"> <span class="desc">region :</span> ${country.region ? country.region : 'Not defined till Now'}</p>
                 <p class="sub-region"> <span class="desc">sub-region :</span> ${country.subregion ? country.subregion : 'Not defined till Now'}</p>
@@ -34,7 +34,7 @@ export async function displaySingle(countryName) {
             <div class="second-detail">
                 <p class="domain"> <span class="desc">Top Level Domain :</span> ${country.tld ? country.tld : 'Not defined till Now'}</p>
                 <p class="currency"> <span class="desc">currency :</span> ${currency}</p>
-                <p class="language"> <span class="desc">language :</span> ${language}</p>
+                <p class="language"> <span class="desc">language :</span> ${language.join(`${'&nbsp;'},${'&nbsp;'}`)}</p>
             </div>
         </div>
         <div class="button-container">
