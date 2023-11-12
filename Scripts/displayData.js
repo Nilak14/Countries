@@ -18,8 +18,9 @@ export async function displayData(url) {
             const linkElement = document.createElement('a')
             linkElement.classList.add('link')
             linkElement.href = `single.html`
+            linkElement.setAttribute('data-name', country.name)
             const HTML = `
-                    <article class="country" data-name="${country.name}">
+                    <article class="country">
                         <img src="${country.flag}" alt="${country.name}-flag" class = ${imageClass}>
                             <div class="details">
                                 <h2 class="name">${country.name}</h2>
